@@ -1,12 +1,12 @@
 # Prompt-flow-samples
 
 ### Autogen
-[link](\promptflow-autogen\README.md)
+[link](/promptflow-autogen/README.md)
 
 
 ### Semantic Kernel
-[link](\semantic-kernel\README.md)
+[link](/semantic-kernel/README.md)
 
 
 ### Langchain
-[link](\langchain\README.md)
+[link](/langchain/README.md)
