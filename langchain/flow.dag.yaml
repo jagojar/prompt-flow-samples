@@ -1,0 +1,17 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  text:
+    type: string
+outputs:
+  output_prompt:
+    type: string
+    reference: ${echo_my_prompt.output}
+nodes:
+- name: langchain_planner
+  type: python
+  source:
+    type: code
+    path: langchain_planner.py
+  inputs: {}

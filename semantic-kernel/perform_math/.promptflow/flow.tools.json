@@ -1,0 +1,27 @@
+{
+  "package": {},
+  "code": {
+    "hello.jinja2": {
+      "type": "prompt",
+      "inputs": {
+        "text": {
+          "type": [
+            "string"
+          ]
+        }
+      }
+    },
+    "math_planner.py": {
+      "type": "python",
+      "inputs": {
+        "input1": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "math_planner.py",
+      "function": "my_python_tool"
+    }
+  }
+}
