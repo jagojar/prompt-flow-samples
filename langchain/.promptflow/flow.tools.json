@@ -1,41 +1,54 @@
 {
   "package": {},
   "code": {
-    "hello.jinja2": {
+    "chat_prompt": {
       "type": "prompt",
       "inputs": {
-        "text": {
+        "customer_info": {
+          "type": [
+            "string"
+          ]
+        },
+        "chat_history": {
           "type": [
             "string"
           ]
         }
       },
-      "description": "Please replace the template with your own prompt.",
-      "source": "hello.jinja2"
+      "source": "user_intent_zero_shot.jinja2"
     },
-    "hello.py": {
+    "extract_intent_tool.py": {
       "type": "python",
       "inputs": {
-        "input1": {
+        "chat_prompt": {
           "type": [
-            "string"
+            "object"
+          ]
+        },
+        "connection": {
+          "type": [
+            "CustomConnection"
           ]
         }
       },
-      "source": "hello.py",
-      "function": "my_python_tool"
+      "source": "extract_intent_tool.py",
+      "function": "extract_intent_tool"
     },
-    "langchain_planner.py": {
-      "type": "python",
+    "user_intent_zero_shot.jinja2": {
+      "type": "prompt",
       "inputs": {
-        "input1": {
+        "customer_info": {
+          "type": [
+            "string"
+          ]
+        },
+        "history": {
           "type": [
             "string"
           ]
         }
       },
-      "source": "langchain_planner.py",
-      "function": "my_python_tool"
+      "source": "user_intent_zero_shot.jinja2"
     }
   }
 }

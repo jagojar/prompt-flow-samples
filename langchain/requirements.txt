@@ -1,3 +1,5 @@
 promptflow
-langchain
-langchain_openai
+promptflow-tools
+python-dotenv
+langchain<0.2.0
+jinja2
